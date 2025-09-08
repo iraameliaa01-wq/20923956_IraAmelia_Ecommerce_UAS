@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keranjang - HaeMakeUp</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body onload="renderCart()">
+  <header>
+    <h1>HaeMakeUp</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="keranjang.html">Keranjang</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Keranjang Belanja</h2>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Harga</th>
+          <th>Jumlah</th>
+          <th>Subtotal</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+    </table>
+    <h3>Total: <span id="total-harga">Rp0</span></h3>
+    <a href="checkout.html"><button>Checkout</button></a>
+  </div>
+
+  <footer>
+    <p>© 2025 HaeMakeUp | Email: haemakeup@mail.com | Telp: 081234567890</p>
+  </footer>
+</body>
+</html>

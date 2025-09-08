@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - HaeMakeUp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>HaeMakeUp</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="keranjang.html">Keranjang</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="telp">No. Telepon:</label>
+      <input type="tel" id="telp" required>
+
+      <label for="alamat">Alamat Pengiriman:</label>
+      <textarea id="alamat" rows="3" required></textarea>
+
+      <label for="pembayaran">Metode Pembayaran:</label>
+      <select id="pembayaran" required>
+        <option value="">-- Pilih Metode --</option>
+        <option value="transfer">Transfer Bank</option>
+        <option value="cod">Cash on Delivery</option>
+        <option value="ewallet">E-Wallet</option>
+      </select>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 HaeMakeUp | Email: haemakeup@mail.com | Telp: 081234567890</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
